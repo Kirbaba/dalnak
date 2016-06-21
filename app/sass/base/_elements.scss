@@ -32,3 +32,20 @@
 		}
 	}
 }
+
+.icon {
+	&_eye {
+		display: block;
+		float: right;
+		width: 29px;
+		height: 15px;
+		background-color: #787878;
+		mask-image: url('../img/eye.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+		@include transition(.3s);
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+	}
+}
