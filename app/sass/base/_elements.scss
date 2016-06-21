@@ -48,4 +48,16 @@
 		     -o-background-size: contain;
 		        background-size: contain;
 	}
+	&_road {
+		display: inline-block;
+		width: 27px;
+		height: 32px;
+		background-image: url('../img/distance-to-travel-between-two-points.png');
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
 }
