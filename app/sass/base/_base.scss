@@ -1,5 +1,8 @@
+$o: #ff6000;
+$dark: #282828;
+
 body {
-  
+  font-family: $gill;
 }
 
 %clearfix {
@@ -46,6 +49,6 @@ ul {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 990px;
+    width: 1170px;
   }
 }

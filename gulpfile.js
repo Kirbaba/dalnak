@@ -9,7 +9,7 @@ var gulp = require('gulp'), // Подключаем Gulp
     pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache = require('gulp-cache'); // Подключаем библиотеку кеширования
     extender = require('gulp-html-extend'),
-    sourcemaps = require('gulp-sourcemaps'),
+    sourcemaps = require('gulp-sourcemaps')
 
 var postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
