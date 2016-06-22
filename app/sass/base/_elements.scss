@@ -60,4 +60,38 @@
 		margin-right: 10px;
 		vertical-align: middle;
 	}
+	&_marker {
+		display: inline-block;
+		width: 19px;
+		height: 23px;		
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		margin-right: 5px;
+		vertical-align: middle;
+		&-blue {
+			background-image: url('../img/marker_blue.png');
+		}
+		&-red {
+			background-image: url('../img/marker_red.png');
+		}
+	}
+	&_correct {
+		display: inline-block;	
+		vertical-align: middle;	
+		svg {
+			size: 12px 9px;
+			fill: #08BC2E;		
+			@include transition(.3s);
+		}
+	}
+	&_discorrect {
+		display: inline-block;	
+		vertical-align: middle;	
+		svg {
+			size: 12px 9px;
+			fill: red;		
+			@include transition(.3s);
+		}
+	}
 }

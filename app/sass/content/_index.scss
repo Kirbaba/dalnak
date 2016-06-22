@@ -205,9 +205,15 @@
 	    	&_see {
 	    		-webkit-flex-basis: 20%;
 	    		        flex-basis: 20%;
+	    	    svg {
+	    	    	width: 29px;
+					height: 15px;
+					fill: #787878;
+					float: right;
+	    	    }
 	    	    &:hover {
-	    	    	span.icon {
-	    	    		background-color: $o;
+	    	    	svg {
+	    	    		fill: $o;
 	    	    	}
 	    	    }
 	    	}
@@ -256,24 +262,17 @@
 	    	position: relative;
 	    	@include transition(.3s);
 	    	margin-top: 10px;
-	    	&:after {
-	    		content: "";
+	    	svg {	    		
 	    		display: inline-block;
 	    		size: 10px 10px;
 	    		margin-left: 5px;
-	    		background-color: #000; 
-	    		-webkit-background-size: contain;
-	    		     -o-background-size: contain;
-	    		        background-size: contain;
-	    		mask-image: url('../img/right-chevron.svg');
-	    		background-repeat: no-repeat;
-	    		background-position: 50% 100%;
+	    		fill: #000; 
 	    		@include transition(.3s);
 	    	}
 	    	&:hover {
 	    		color: $o;
-	    		&:after {
-					background-color: $o;
+	    		svg {
+					fill: $o;
 	    		}
 	    	}
 	    }
@@ -287,15 +286,16 @@
 	background-image: url('../img/asfalt.jpg');
 	&__wrap {
 		float: left;
+		position: relative;
 		width: 100%;
-		height: 100%;
+		height: 410px;
 		background-image: url('../img/marking-1.png');
 		-webkit-background-size: 100%;
 		     -o-background-size: 100%;
 		        background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center;
-		padding: 50px 0;
+		padding: 15px 0;
 	}
 	&__text {
 		float: left;
@@ -305,7 +305,8 @@
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
 		padding-right: 50px;
-		margin-bottom: 150px;
+		margin-bottom: 100px;
+		margin-top: 50px;
 		p {
 			font-size: 16px;
 		}
@@ -327,10 +328,58 @@
 	}
 	&__destination {
 		float: left;
+		position: relative;
 		width: 25%;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-align-content: flex-start;
+		        align-content: flex-start;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: 100%;
+		padding: 90px 0;
+		&_box {
+			position: relative;
+			display: block;
+			float: left;
+			width: 260px;
+			height: 38px;
+			@include border-radius(4px);
+			background-color: #fff;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 0 10px;
+			margin-top: 35px;
+		}
+		&_inp {
+			display: inline-block;
+			border: none;
+			outline: none;
+			height: 33px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;	
+			width: 80%;
+			&::-webkit-input-placeholder { text: $dark 10px; }
+			&::-moz-placeholder { text: $dark 10px; } /* firefox 19+ */
+			&:-ms-input-placeholder { text: $dark 10px; } /* ie */
+			input:-moz-placeholder { text: $dark 10px; }		
+		}
+		&_placeholder {
+			position: absolute;
+			text: #333 11px;
+			top: 10px;
+			pointer-events: none;
+		}
 	}
 	&__go {
 		float: left;
@@ -338,10 +387,24 @@
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
-		padding-top: 135px;
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: flex-end;
+		        align-items: flex-end;
+		height: 100%;
+		-webkit-align-content: center;
+		        align-content: center;
 		a.button {
 			font-size: 14px;
 			text-transform: uppercase;
+			margin-top: 50px;
 		}
 	}
 }
