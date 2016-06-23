@@ -150,7 +150,201 @@
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.header__logo {
+		width: 100%;
+	}
+	.header__controls {
+		width: 100%;
+	}
+	.motocalendar__content {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.events__box {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.howitworks__flex {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.news__item {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.news__box {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.route__destination {
+		width: 100%;
+	}
+	.route__go {
+		width: 100%;
+		padding-left: 0;
+		a.button {
+			margin-top: 15px;
+		}
+	}
+	.motocalendar__event_thumb {
+		width: 100%;
+	}
+	.events__item {
+		margin: 0 10px 25px;
+	}
+	.motocalendar__list {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    -webkit-box-shadow: 0 0 10px 0px rgba(0,0,0,.3);
+	            box-shadow: 0 0 10px 0px rgba(0,0,0,.3);
+	}
+	.motocalendar__event {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    &_nav {
+	    	height: auto;
+	    }
+	}
+	.news__expected_item {
+		padding: 10px 20px;
+	}
+	.news__expected_item {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	    &_thumb {
+	    	-webkit-flex-basis: 100%;
+	    	        flex-basis: 100%;
+	    }
+	    &_desc {
+	    	-webkit-flex-basis: 80%;
+	    	        flex-basis: 80%;
+	    }
+	}
+	.motocalendar__event_info_line-title {
+		padding-right: 10px;
+	}
+	.motocalendar__event_nav a {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		float: left;
+		margin: 0;
+		padding: 0 10px;
+		width: 100%;
+		text-align: center;
+	}
+	.header {
+		&__controls {	
+			text-align: center;
+			.button {
+				display: block;
+				float: left;
+			}
+			&_signin {
+				font-size: 0;
+				min-width: 0;
+				padding: 10px;
+				height: 36px;
+				width: 36px;
+				&:after {
+					content: "";
+					position: absolute 50%;
+					-webkit-transform: translate(-50%, -50%);
+					   -moz-transform: translate(-50%, -50%);
+					    -ms-transform: translate(-50%, -50%);
+					     -o-transform: translate(-50%, -50%);
+					        transform: translate(-50%, -50%);
+					background-image: url('../img/sign-in.png');
+					size: 20px;
+					display: block;
+					-webkit-background-size: contain;
+					     -o-background-size: contain;
+					        background-size: contain;
+				}
+			}
+			&_signup {
+				font-size: 0;
+				min-width: 0;
+				padding: 10px;
+				height: 36px;
+				width: 36px;
+				&:after {
+					content: "";
+					position: absolute 50%;
+					-webkit-transform: translate(-50%, -50%);
+					   -moz-transform: translate(-50%, -50%);
+					    -ms-transform: translate(-50%, -50%);
+					     -o-transform: translate(-50%, -50%);
+					        transform: translate(-50%, -50%);
+					background-image: url('../img/add-people-interface-symbol-of-black-person-close-up-with-plus-sign-in-small-circle.png');
+					size: 20px;
+					display: block;
+					-webkit-background-size: contain;
+					     -o-background-size: contain;
+					        background-size: contain;
+					background-position: 50%;
+				}
+			}
+		}
+	}
+	.footer {
+		&__logo {
+			width: 100%;
+		}
+		&__site-map {
+			width: 100%;
+		}
+		&__rules {
+			ul {
+				li {
+					display: block;
+					float: left;
+					width: 100%;
+					margin-right: 0;
+				}
+				
+			}
+		}
+	}
+	.navigation__menu {
+		float: right;
+	}
+	.navigation__search {
+		float: left;
+	}
+	.navigation__btn {
+		display: block;
+	}
+	.navigation__menu {
+		float: left;
+		width: 100%;
+		li {
+			float: left;
+			width: 100%;
+			border-left: none;
+			border-bottom: 1px solid;
+			a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+	.navigation__search {
+		position: absolute;
+		top: 0;
+		margin: 15px 0;
+	} 
+	.navigation__menu {
+		display: none;
+	}
+	.footer__site-map ul {
+		column-count: 1;
+	}
+	.footer__logo {
+		margin-top: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
