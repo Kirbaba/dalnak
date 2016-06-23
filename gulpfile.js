@@ -7,9 +7,10 @@ var gulp = require('gulp'), // Подключаем Gulp
     del = require('del'), // Подключаем библиотеку для удаления файлов и папок
     imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-    cache = require('gulp-cache'); // Подключаем библиотеку кеширования
+    cache = require('gulp-cache'), // Подключаем библиотеку кеширования
     extender = require('gulp-html-extend'),
-    sourcemaps = require('gulp-sourcemaps')
+    sourcemaps = require('gulp-sourcemaps'),
+    gutil = require('gulp-util');
 
 var postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
@@ -75,6 +76,13 @@ gulp.task('sass', function() { // Создаем таск Sass
         }));
 });
 
+gulp.task('compress', function() {
+  return gulp.src(['app/js/*.js'])
+  .pipe(concat('script.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('js'));
+});
+
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
@@ -89,22 +97,12 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-gulp.task('compress', function() {
-  return gulp.src('app/js/*.js')
-  .pipe(concat('script.js'))
-  .pipe(rename({
-      suffix: ".min",
-      extname: ".js"
-  }))
-  .pipe(uglify())
-  .pipe(gulp.dest('js'));
-});
+
 
 gulp.task('extend', function () {
     gulp.src('./app/html/*.html')
         .pipe(extender({annotations:true,verbose:false})) // default options
         .pipe(gulp.dest('./'))
-
 });
 
 gulp.task('watch', ['browser-sync', 'compress'], function() {
@@ -114,7 +112,7 @@ gulp.task('watch', ['browser-sync', 'compress'], function() {
     gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/*', function() {
        gulp.run('compress');
-  }, browserSync.reload); // Наблюдение за JS файлами в папке js
+    }, browserSync.reload); // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('img', function() {

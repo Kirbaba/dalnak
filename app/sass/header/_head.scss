@@ -8,6 +8,10 @@
 	&__logo {
 		float: left;
 		width: 50%;
+		position: relative;
+		img {
+			max-width: 90%;
+		}
 	}
 	&__controls {
 		float: left;

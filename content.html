@@ -435,21 +435,21 @@
     	<!-- open .cantainer -->
     	<div class="container">
     		<h3>
-    			<a href="#" class="motocalendar_title motocalendar_title-active" data-tab="motocalendar__list">Мотокалендарь</a>
+    			<a href="#" class="motocalendar_title motocalendar_title-active" data-tab="motocalendar__content">Мотокалендарь</a>
     			<a href="#" class="motocalendar_title" data-tab="motocalendar__search">Найти мероприятие</a>
     		</h3>
 			<!-- open .motocalendar__content -->
-			<div class="motocalendar__content">
+			<div class="motocalendar__tab motocalendar__content">
 				<!-- open .motocalendar__list -->
 	    		<aside class="motocalendar__list">
 	    			<!-- open .motocalendar__list_nav -->
 	    			<nav class="motocalendar__list_nav">
-		    			<a href="#" class="motocalendar__list_nav_btn motocalendar__list_nav-active">Все мероприятия</a>
-		    			<a href="#" class="motocalendar__list_nav_btn">Мои мероприятия</a>
+		    			<a href="#" class="motocalendar__list_nav_btn motocalendar__list_nav-active" data-tab="motocalendar__list_box">Все мероприятия</a>
+		    			<a href="#" class="motocalendar__list_nav_btn" data-tab="motocalendar__list_mine">Мои мероприятия</a>
 	    			</nav>
 	    			<!-- close .motocalendar__list_nav -->
 					<!-- open .motocalendar__list_box -->
-					<div class="motocalendar__list_box">
+					<div class="motocalendar__list_tab motocalendar__list_box">
 						<!-- open .motocalendar__list_item -->
 						<a href="#nowhere" class="motocalendar__list_item">
 							<span class="motocalendar__list_title">Выставка “МОТОВЕЛОЭКСПО-2016”</span>
@@ -468,6 +468,10 @@
 						<!-- close .motocalendar__list_item -->
 					</div>
 					<!-- close .motocalendar__list_box -->
+
+					<!-- open .motocalendar__list_mine -->
+					<div class="motocalendar__list_tab motocalendar__list_mine"></div>
+					<!-- close .motocalendar__list_mine -->
 	    		</aside>
 	    		<!-- close .motocalendar__list -->
 
@@ -551,15 +555,130 @@
 	    			<!-- close .motocalendar__event_box -->
 	    		</article>
 	    		<!-- close .motocalendar__event -->
-	    		<!-- open .motocalendar__search -->
-	    		<div class="motocalendar__search"></div>
-	    		<!-- close .motocalendar__search -->	
+	    			
 			</div>
 			<!-- close .motocalendar__content -->
-    		
+    		<!-- open .motocalendar__search -->
+    		<div class="motocalendar__tab motocalendar__search"></div>
+    		<!-- close .motocalendar__search -->
     	</div>
     	<!-- close .cantainer -->
     </section>
     <!-- close .motocalendar -->
+
+    <!-- open .statistics -->
+    <section class="statistics">
+    	<!-- open .container -->
+    	<div class="container">
+    		<!-- open .statistics__flex -->
+    		<div class="statistics__flex">
+    			<!-- open .statistic__box -->
+    			<div class="statistics__box">
+    				<h3>Статистика </h3>
+    				<!-- open .statistics__table -->
+    				<div class="statistics__table">
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    						Lorem ipsum dolor.
+	    					</span>
+	    					<span>1448 байкеров</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    					Lorem ipsum.
+	    					</span>
+	    					<span>12358</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    					Lorem.
+	    					</span>
+	    					<span>
+	    						<a href="#">Lorem ipsum.</a>
+	    					</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    				</div>
+    				<!-- close .statistics__table -->
+    			</div>
+    			<!-- close .statistic__box -->
+    			<!-- open .statistic__box -->
+    			<div class="statistics__box">
+    				<h3>Топ 10 городов</h3>
+    				<!-- open .statistics__table -->
+    				<div class="statistics__table">
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    						Lorem ipsum dolor.
+	    					</span>
+	    					<span>1448 байкеров</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    					Lorem ipsum.
+	    					</span>
+	    					<span>12358</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    					<!-- open .statistics__line -->
+    					<div class="statistics__line">
+	    					<span class="statistics__line_title">
+	    					Lorem.
+	    					</span>
+	    					<span>
+	    						<a href="#">Lorem ipsum.</a>
+	    					</span>
+    					</div>
+    					<!-- close .statistics__line -->
+    				</div>
+    				<!-- close .statistics__table -->
+    			</div>
+    			<!-- close .statistic__box -->
+    			<!-- open .statistic__box -->
+    			<div class="statistics__box">
+    				<!-- open .statistics__blog -->
+    				<div class="statistics__blog">
+    					<h4>Мотоблог сообщества</h4>
+    					<!-- open .statistics__blog_item -->
+    					<div class="statistics__blog_item">
+    						<a href="#" class="statistics__blog_title">Post title</a>
+    						<small>10.07.2016</small>
+    						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+    					</div>
+    					<!-- close .statistics__blog_item -->
+    					<!-- open .statistics__blog_item -->
+    					<div class="statistics__blog_item">
+    						<a href="#" class="statistics__blog_title">Post title</a>
+    						<small>10.07.2016</small>
+    						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+    					</div>
+    					<!-- close .statistics__blog_item -->
+    					<!-- open .statistics__blog_item -->
+    					<div class="statistics__blog_item">
+    						<a href="#" class="statistics__blog_title">Post title</a>
+    						<small>10.07.2016</small>
+    						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+    					</div>
+    					<!-- close .statistics__blog_item -->
+    					<a href="#" class="statistics__blog_more">Больше статей</a>
+    				</div>
+    				<!-- close .statistics__blog -->
+    			</div>
+    			<!-- close .statistic__box -->
+    			<a href="#" class="button button_border">Мотоклубы</a>
+    		</div>
+    		<!-- close .statistics__flex -->
+    	</div>
+    	<!-- close .container -->
+    </section>
+    <!-- close .statistics -->
 </main>
 <!-- @@close-->
