@@ -1,9 +1,148 @@
 @media only screen and (max-width: 1024px) {
-	
+	.header__logo {
+		width: 30%;
+	}
+	.header__controls {
+		width: 70%;
+	}
+	.navigation__menu li a {
+		padding: 30px 10px;
+	}
+	.navigation__search {
+		width: 200px;
+		&_box {
+			width: 85%;
+		}
+	}
+	.howitworks__item {
+		-webkit-flex-basis: 240px;
+		        flex-basis: 240px;
+		padding: 10px 15px;
+	}
+	.news__expected_head h4 {
+		font-size: 18px;
+	}
+	.news__expected {
+		-webkit-flex-basis: 40%;
+		        flex-basis: 40%;
+	}
+	.news__box {
+		-webkit-flex-basis: 60%;
+		        flex-basis: 60%;
+	}
+	.route__text {
+		width: 46%;
+	}
+	.route__destination {
+		width: 27%;
+	}
+	.route__go {
+		width: 27%;
+		padding-left: 30px;
+		a.button {
+			font-size: 12px;
+			float: right;
+			margin-right: 0;
+			margin-left: 0;
+			-webkit-align-self: flex-end;
+			        align-self: flex-end;
+			.icon_road {
+				width: 23px;
+				height: 27px;
+		    }
+		}
+	}
+	.events__add {
+		padding: 0 25px;
+	}
+	.motocalendar__list_nav_btn {
+		font-size: 12px;
+	}
+	.motocalendar__event_thumb {
+		height: 250px;
+	}
+	.footer__site-map ul {
+		column-count: 2;
+	}
 }
 
 @media only screen and (max-width: 980px) {
-	
+	.button {
+		font-size: 12px;
+	}
+	.howitworks__flex {
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	}
+	.news__flex {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.events__box {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.events__add {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.news__box {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    padding-right: 0;
+	}
+	.news__expected {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+		padding-left: 0;
+	}
+	.route__text {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.route__wrap {
+		height: auto;
+		background: none;
+	}
+	.route__destination {
+		width: 50%;
+		padding: 0;
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	}
+	.route__go {
+		width: 50%;
+	}
+	.route__destination_box {
+		margin: 25px auto;
+	}
+	.route__go a.button {
+		margin-top: 65px;
+		-webkit-align-self: center;
+		        align-self: center;
+	}
+	.events__item {
+		margin: 0 15px 25px;
+	}
+	.motocalendar__event_info {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.motocalendar__event_thumb {
+		float: left;
+		width: 40%;
+	}
+	.statistics__box {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.footer__site-map ul li a {
+		font-size: 14px;
+	}
+	.footer__rules ul li a {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 770px) {
