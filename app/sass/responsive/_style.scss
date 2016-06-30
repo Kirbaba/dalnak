@@ -143,7 +143,7 @@
 	.footer__rules ul li a {
 		font-size: 12px;
 	}
-	.news__all .news__box {
+	.news__other, .news__all .news__box {
 		margin: 0;
 	}
 }
@@ -359,12 +359,17 @@
 		width: 100%;
 		padding: 0;
 	}
-	.news__all .news__item {
+	.news__other .news__item, .news__all .news__item {
 		-webkit-flex-basis: 100%;
 		        flex-basis: 100%;
 	    padding: 0;
 	}
-	
+	.news__open .news__item_thumb {
+		width: 100%;
+	}
+	.news__other h3 {
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
