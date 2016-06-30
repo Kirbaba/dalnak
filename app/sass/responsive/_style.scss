@@ -143,6 +143,9 @@
 	.footer__rules ul li a {
 		font-size: 12px;
 	}
+	.news__all .news__box {
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -348,6 +351,20 @@
 	.club__item {
 		width: 1 / 3 * 100%;
 	}
+
+	.news__all .news__item:first-of-type .news__item_thumb {
+		width: 100%;
+	}
+	.news__all .news__item:first-of-type .news__item_desc {
+		width: 100%;
+		padding: 0;
+	}
+	.news__all .news__item {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    padding: 0;
+	}
+	
 }
 
 @media only screen and (max-width: 500px) {
