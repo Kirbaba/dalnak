@@ -5,6 +5,8 @@
 		position: relative;
 		padding: 25px 0;
 		.news__box {
+			float: left;
+			width: 100%;
 			padding-right: 0;
 			-webkit-flex-basis: 100%;
 			        flex-basis: 100%;
@@ -49,6 +51,9 @@
 		.button_border {
 			margin: 25px auto;
 		}
+ 		.breadcrumbs {
+ 			
+ 		}
 	}
 	&__events {
 		background-color: #F8F6F6;
