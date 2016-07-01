@@ -146,6 +146,12 @@
 	.news__other, .news__all .news__box {
 		margin: 0;
 	}
+	.events-calendar__control, .events-calendar__list {
+		width: 100%;
+	}
+	.events-calendar__list {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 770px) {
