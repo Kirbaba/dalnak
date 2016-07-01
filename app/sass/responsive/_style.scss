@@ -376,6 +376,14 @@
 	.news__other h3 {
 		padding: 0;
 	}
+	.events-conrent__sidebar, .events-conrent__box {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.events-conrent__box {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 500px) {
