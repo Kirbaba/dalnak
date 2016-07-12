@@ -1,0 +1,136 @@
+.event__content{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+
+.event__content_place{
+  float: left;
+  width: 60%;
+  display: block;
+}
+
+.event__content_promo-pic{
+  float: left;
+  width: 40%;
+  display: block;
+  height: 665px;
+  img{
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.date-event{
+  font-family: $gill;
+  font-size: 24px;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  &:last-of-type{
+    margin-bottom: 30px;
+  }
+}
+
+.about-place{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+  font-family: $gill;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+
+}
+.kilometers{
+    background-color: #ff6000;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 15%;
+    border-radius: 5px;
+    padding: 5px 3px;
+    margin-left: 20px;
+    &:hove{
+      background-color: #cc4d00;
+    }
+}
+.link-site{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+  font-family: $gill;
+  color: #3a3a3a;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  a{
+    font-size: 18px;
+    font-family: $gill;
+    color: #3a3a3a;
+  }
+}
+.soc-link{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  font-family: $gill;
+  color: #3a3a3a;
+
+}
+.icon-soc-link{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  top: 10px;
+}
+.vk-icon{
+  background-image: url("../img/vk-icon.png");
+  background-repeat: no-repeat;
+}
+.fb-icon{
+  background-image: url("../img/fb-icon.png");
+  background-repeat: no-repeat;
+}
+.ok-icon{
+  background-image: url("../img/ok-icon.png");
+  background-repeat: no-repeat;
+}
+.event-button{
+  width: 100%;
+  float: left;
+  display: inline-block;
+}
+.event-button-bookmarks, .event-button-went{
+  min-width: 200px;
+}
+.event__maps{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+.gps-coordinate{
+  font-size: 36px;
+  font-family: $fow;
+  text-transform: uppercase;
+  text-align: left;
+}
+#map {
+    height: 561px;
+    width: 100%;
+}
