@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+  .motoclub-filter{
+    text-align: center;
+    .events-calendar__control{
+      text-align: left;
+    }
+  }
+  .add-button{
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .add{
+    float: none;
+  }
+  .motoclub-search-input{
+    width: 97%;
+  }
+  .motoclub-content-promo-item{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
