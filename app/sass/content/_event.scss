@@ -58,9 +58,12 @@
     border-radius: 5px;
     padding: 5px 3px;
     margin-left: 20px;
-    &:hove{
+    &:hover{
       background-color: #cc4d00;
     }
+}
+.old-kilometers{
+  background-color: #959595;
 }
 .link-site{
   width: 100%;
@@ -110,10 +113,25 @@
   background-image: url("../img/ok-icon.png");
   background-repeat: no-repeat;
 }
+.vk-icon-old{
+  background-image: url("../img/vk-icon-old.png");
+  background-repeat: no-repeat;
+}
+.fb-icon-old{
+  background-image: url("../img/fb-icon-old.png");
+  background-repeat: no-repeat;
+}
+.ok-icon-old{
+  background-image: url("../img/ok-icon-old.png");
+  background-repeat: no-repeat;
+}
 .event-button{
   width: 100%;
   float: left;
   display: inline-block;
+}
+.button_gray{
+  margin-left: 0;
 }
 .event-button-bookmarks, .event-button-went{
   min-width: 200px;
@@ -129,8 +147,103 @@
   font-family: $fow;
   text-transform: uppercase;
   text-align: left;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 #map {
     height: 561px;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#map-old {
+    height: 561px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.program__event{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+.program__event-title{
+  text-align: left;
+  width: 100%;
+  float: left;
+  display: inline-block;
+  font-family: $fow;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.program__event_about{
+  width: 80%;
+  float: left;
+  display: block;
+}
+.program__event_promo-pic{
+  width: 20%;
+  float: left;
+  display: block;
+  height: 420px;
+  img{
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.mini-about-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 15px 0;
+  &:first-of-type{
+    padding-top: 0;
+  }
+}
+.program__event_about-text{
+  text-align: left;
+  font-size: 16px;
+  font-family: $gill;
+  margin: 0;
+  color: #000;
+}
+
+.old-event{
+  width: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+.old-event-title{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  text-align: left;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 36px;
+  font-family: $fow;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+.Load-more{
+  display: inline-block;
+  text-align: center;
+  height: 38px;
+  border: 1px solid #ff6000;
+  border-radius: 10px;
+  min-width: 100px;
+  font-size: 12px;
+  font-family: $gill;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ff6000;
+  padding: 0 20px;
+  margin: 25px 0;
+  font-weight: 600;
 }

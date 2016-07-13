@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1024px) {
+  .event-button-bookmarks, .event-button-went, .button_gray{
+    min-width: 29%;
+  }
+  .event__content_promo-pic{
+    height: auto;
+  }
+  .date-event{
+    font-size: 22px;
+  }
+  .program__event_about{
+    width: 60%;
+    float: right;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  .program__event_promo-pic{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+    .breadcrumbs {
+      li{
+        &:before{
+          border-bottom: none;
+        }
+        &:last-of-type{
+          font-size: 25px;
+        }
+      }
+    }
+    .event__content_place{
+      width: 100%;
+    }
+    .event-button-bookmarks, .event-button-went, .button_gray{
+      min-width: 29%;
+    }
+    .event__content_promo-pic{
+      width: 100%;
+      height: auto;
+    }
+    .gps-coordinate{
+      font-size: 20px;
+    }
+    .program__event_about{
+      width: 100%;
+    }
+    .program__event_promo-pic{
+      width: 100%;
+      height: auto;
+    }
+    .old-event-title{
+      font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
