@@ -237,3 +237,42 @@
   padding: 5px 20px;
   box-sizing: border-box;
 }
+.gallery{
+  width: 100%;
+  float: left;
+  display: block;
+}
+.gallery-item{
+  width: 20%;
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  height: 126px;
+  cursor: pointer;
+  img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 126px;
+    -webkit-transform:scale(1); /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform:scale(1); /*Mozilla: масштабирование*/
+    -o-transform:scale(1); /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+  }
+}
+.all-photos{
+  width: 20%;
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  height: 126px;
+  cursor: pointer;
+  background-color: #282828;
+  color: #fff;
+  font-size: 18px;
+  font-family: $gill;
+  text-align: center;
+  line-height: 100px;
+}

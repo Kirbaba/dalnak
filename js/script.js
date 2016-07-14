@@ -72,3 +72,18 @@
 
 // Ждем полной загрузки страницы, после этого запускаем initMap()
 // google.maps.event.addDomListener(window, "load", initMap);
+$(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+});
