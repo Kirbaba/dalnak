@@ -1,0 +1,208 @@
+#mapBlack {
+    height: 561px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.knives__maps{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+.about-knives{
+  width: 100%;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.about-knives-title{
+  background-color: #282828;
+  border-radius: 10px;
+  float: left;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 36px;
+  font-family: $fow;
+  padding:5px 15px;
+  box-sizing: border-box;
+  margin: 0;
+  span{
+    float: right;
+    min-width: 20%;
+    text-align: right;
+    line-height: 42px;
+    padding-right: 10px;
+    a{
+      font-size: 16px;
+      color: #fff;
+      font-family: $gill;
+      text-align: right;
+    }
+  }
+}
+.about-knives-content{
+  width: 75%;
+  float: left;
+  display: block;
+  padding-right: 60px;
+  box-sizing: border-box;
+  padding-top: 20px;
+
+}
+.about-knives-pic{
+  width: 25%;
+  float: left;
+  display: block;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.about-knives-text{
+  font-size: 18px;
+  font-family: $gill;
+  text-align: justify;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.about-knives-pic-1{
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  height: 420px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.about-knives-pic-2{
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  height: 273px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.moto-faces{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+  text-align: center;
+  .about-knives-title{
+    float: none;
+  }
+}
+.moto-faces-block{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 0;
+}
+.moto-faces-item{
+  width: 30%;
+  margin: 5px 15px;
+  text-align: center;
+}
+.face-pic{
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  position: relative;
+  display: inline-block;
+
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+
+  }
+}
+.moto-faces-info-title{
+  font-family: $gill;
+  font-size: 15px;
+  color: #ff6000;
+  text-transform: uppercase;
+  margin: 0;
+}
+.moto-faces-info-position, .moto-faces-number, .moto-faces-link{
+  font-family: $gill;
+  font-size: 15px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+}
+.moto-faces-link{
+  padding-top: 20px;
+  text-transform: lowercase;
+}
+.moto-faces-info-position{
+  padding-bottom: 20px;
+}
+
+.interventions{
+  width: 100%;
+  float: left;
+  display: block;
+  .about-knives-title{
+    background-color: #ff6000;
+  }
+}
+.interventions-row{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.interventions-promo{
+  width: 10%;
+height: 130px;
+background-color: #717171;
+display: block;
+float: left;
+}
+.interventions-text{
+  width: 90%;
+  float: left;
+  display: block;
+  padding-left: 30px;
+  box-sizing: border-box;
+  p{
+    text-align: left;
+    font-size: 24px;
+    font-family: $gill;
+    color: #3a3a3a;
+    margin: 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+  span{
+    font-size: 14px;
+    font-family: $gill;
+    color: #939393;
+    text-align: left;
+  }
+}

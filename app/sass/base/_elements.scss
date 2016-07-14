@@ -150,7 +150,16 @@
 				border-radius: 10px;
 				padding: 5px 12px;
 				color: #fff;
-				font-size: 40px;
+				font-size: 24px;
+				a{
+					float: right;
+					line-height: 30px;
+					font-size: 16px;
+		      color: #000;
+		      font-family: $gill;
+			    padding-left: 20px;
+					box-sizing: border-box;
+				}
 				&:after, &:before {
 					content: none;
 				}
