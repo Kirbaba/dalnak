@@ -88,7 +88,7 @@ function initialize() {
  var myLatlng = new google.maps.LatLng(57.0442, 9.9116);
  var mapOptionsKnives = {
      center: myLatlng, // Координаты центра мы берем из переменной centerLatLng
-       zoom: 10,
+       zoom: 14,
 
   };
   var mapBlack = new google.maps.Map(document.getElementById("mapBlack"), mapOptionsKnives);

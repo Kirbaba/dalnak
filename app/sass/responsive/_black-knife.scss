@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1024px) {
+  .about-knives-text{
+    font-size: 15px;
+  }
+  .about-knives-content{
+    width: 70%;
+  }
+  .about-knives-pic{
+    width: 30%;
+  }
+  .moto-faces-item {
+      flex-basis: 40%;
+  }
+  .interventions-promo{
+    width: 15%;
+  }
+  .interventions-text{
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+  .about-knives-title{
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .about-knives-content{
+    width: 100%;
+    padding-right: 0;
+  }
+  .about-knives-text{
+    font-size: 15px;
+  }
+  .about-knives-pic{
+    width: 100%;
+  }
+  .moto-faces-item {
+    flex-basis: 100%;
+  }
+  .interventions-promo{
+    width: 40%;
+  }
+  .interventions-text{
+    padding-left: 0;
+    p{
+      padding-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
