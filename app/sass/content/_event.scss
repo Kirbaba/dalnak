@@ -30,7 +30,7 @@
   display: inline-block;
   float: left;
   width: 100%;
-  font-weight: 700;
+
   &:last-of-type{
     margin-bottom: 30px;
   }
@@ -46,14 +46,11 @@
   margin: 0;
   padding: 5px 0;
   text-align: left;
-  a{
-    font-size: 18px;
-    font-family: $gill;
-    color: #3a3a3a;
-  }
+
 
 }
 .kilometers{
+    font-family: $gill;
     background-color: #ff6000;
     font-size: 18px;
     color: #fff;
