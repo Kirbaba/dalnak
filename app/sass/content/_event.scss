@@ -15,16 +15,18 @@
   float: left;
   width: 40%;
   display: block;
-  height: 665px;
+  height: 400px;
   img{
     left: 0;
     top: 0;
-    width: 100%;
+    width: auto;
+    height: 400px;
+    float: right;
   }
 }
 .date-event{
   font-family: $gill;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
   text-align: left;
   display: inline-block;

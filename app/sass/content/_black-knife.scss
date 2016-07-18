@@ -26,12 +26,13 @@
   width: 100%;
   text-align: left;
   color: #fff;
-  font-size: 36px;
+  font-size: 22px;
   font-family: $fow;
-  padding:5px 15px;
+  padding:0px 15px;
   box-sizing: border-box;
   margin: 0;
   margin-top: 10px;
+  line-height: 40px;
   span{
     float: right;
     min-width: 20%;
@@ -124,8 +125,8 @@
   text-align: center;
 }
 .face-pic{
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
   margin: 20px 0;
   position: relative;
   display: inline-block;
@@ -172,18 +173,20 @@
   }
 }
 .interventions-row{
-  width: 100%;
+  width: 33.3%;
   display: inline-block;
   float: left;
   padding: 30px 0;
   box-sizing: border-box;
+  text-align: center;
 }
 .interventions-promo{
-  width: 10%;
-height: 130px;
-background-color: #717171;
-display: block;
-float: left;
+  width: 30%;
+  height: 130px;
+  background-color: #717171;
+  display: block;
+  float: none;
+  margin: 0 auto;
 }
 .interventions-text{
   width: 90%;
@@ -192,12 +195,12 @@ float: left;
   padding-left: 30px;
   box-sizing: border-box;
   p{
-    text-align: left;
-    font-size: 24px;
+    text-align: center;
+    font-size: 18px;
     font-family: $gill;
     color: #3a3a3a;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 25px;
     box-sizing: border-box;
   }
   span{
