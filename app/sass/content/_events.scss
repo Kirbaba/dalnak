@@ -9,6 +9,7 @@
 			width: 1 / 12 * 100%;
 			height: 40px;
 			line-height: 35px;
+
 			&_link {
 				display: inline-block;
 				text: #191919 uppercase 16px;
@@ -21,7 +22,7 @@
 		}
 		&__list {
 			float: left;
-			width: 10 / 12 * 100%;
+			width: 10.3 / 12 * 100%;
 			position: relative;
 			text-align: center;
 			&_month {
@@ -29,13 +30,13 @@
 				-webkit-box-sizing: border-box;
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
-			    padding: 10px 5px;
-			    text: #3a3a3a 14px;
+			    padding: 10px 7px;
+			    text: #3a3a3a 16px;
 			    border: 1px solid transparent;
 			    border-radius: 5px;
 			    @include transition(.3s);
 			    &:hover {
-			    	border-color: #3a3a3a;			    	
+			    	border-color: #3a3a3a;
 			    }
 			    &_checked {
 			    	color: $o;
@@ -108,10 +109,10 @@
 				display: block;
 				height: 50px;
 				line-height: 1;
-				text: #191919 14px;
+				text: #191919 16px;
 				line-height: 45px;
 				margin-bottom: 15px;
-				cursor: pointer;				
+				cursor: pointer;
 				em {
 					line-height: normal;
 					vertical-align: middle;
@@ -125,7 +126,7 @@
 		float: left;
 		width: 100%;
 		position: relative;
-		padding: 25px 0 75px;
+		padding: 25px 0 30px;
 		&_wrap {
 			float: left;
 			width: 100%;
@@ -153,13 +154,13 @@
 		    	    -ms-flex-flow: row wrap;
 		    	        flex-flow: row wrap;
 		    	-webkit-justify-content: space-between;
-		    	        justify-content: space-between;		    	
+		    	        justify-content: space-between;
 		    	-webkit-box-sizing: border-box;
 		    	   -moz-box-sizing: border-box;
 		    	        box-sizing: border-box;
 		    	padding: 15px;
 		    	background-color: #E8E8E8;
-		    	a {		    		
+		    	a {
 					text: $dark;
 					&:hover {
 						text-decoration: underline;
@@ -177,7 +178,7 @@
 		    	padding: 15px;
 		    	border-radius: 5px;
 		    	border: 1px solid #E4E4E4;
-		    	
+
 		    }
 		    &__info {
 		    	text: $dark 14px 1;

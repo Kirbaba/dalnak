@@ -1,9 +1,22 @@
 @media only screen and (max-width: 1024px) {
+  .breadcrumbs {
+    li{
+      &:before{
+        border-bottom: none;
+      }
+      &:last-of-type{
+        font-size: 16px;
+      }
+    }
+  }
   .event-button-bookmarks, .event-button-went, .button_gray{
     min-width: 29%;
   }
   .event__content_promo-pic{
-    height: auto;
+    height: 360px;
+    img{
+      height: 360px;
+    }
   }
   .date-event{
     font-size: 22px;
@@ -22,6 +35,9 @@
   }
   .all-photos{
     width: 25%;
+  }
+  .interventions-promo{
+    width: 35%;
   }
 }
 

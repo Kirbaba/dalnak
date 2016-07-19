@@ -1,17 +1,10 @@
 var map1, map2, map3;
 function initialize() {
-
-    // map.setOptions({styles: styles});
-    // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
-    var centerLatLng = new google.maps.LatLng(55.74929, 37.0720767);
-
-    // Обязательные опции с которыми будет проинициализированна карта
-    var mapOptions = {
-        center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
-        zoom: 8,
-    };
-    var map1 = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+  var centerLatLng = new google.maps.LatLng(55.74929, 37.0720767);
+  var mapOptions = {
+      center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
+      zoom: 8,
+  };
   var styles = [
     {
       stylers: [
@@ -46,26 +39,44 @@ function initialize() {
   }
   ];
   var mapOptionsOld = {
-
       center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
       zoom: 8,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
      disableDefaultUI: true,
      styles: styles
   };
-  var map2 = new google.maps.Map(document.getElementById("map-old"), mapOptionsOld);
+
   var myLatlng3 = new google.maps.LatLng(57.0442, 9.9116);
   var mapOptionsKnives = {
        center: myLatlng3, // Координаты центра мы берем из переменной centerLatLng
          zoom: 14,
     };
-  var map3 = new google.maps.Map(document.getElementById("mapBlack"), mapOptionsKnives);
+    if ($('#map').length > 0) {
+      map1 = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+
+    if ($('#map-old').length > 0) {
+    map2 = new google.maps.Map(document.getElementById("map-old"), mapOptionsOld);
+    }
+
+    if ($('#mapBlack').length > 0) {
+    map3 = new google.maps.Map(document.getElementById("mapBlack"), mapOptionsKnives);
+    }
+
+
+
+
+
+
 
 }
 
+
+
 // Ждем полной загрузки страницы, после этого запускаем initMap()
-// google.maps.event.addDomListener(window, "load", initMap);
+ //google.maps.event.addDomListener(window, "load", initMap);
 $(document).ready(function() {
+  //initialize()
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',
 		nextEffect	: 'none',

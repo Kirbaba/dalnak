@@ -12,10 +12,20 @@
       flex-basis: 40%;
   }
   .interventions-promo{
-    width: 15%;
+    width: 35%;
   }
   .interventions-text{
     width: 85%;
+  }
+  .breadcrumbs {
+    li{
+      &:before{
+        border-bottom: none;
+      }
+      &:last-of-type{
+        font-size: 16px;
+      }
+    }
   }
 }
 @media only screen and (max-width: 770px) {
@@ -41,13 +51,17 @@
     flex-basis: 100%;
   }
   .interventions-promo{
-    width: 40%;
+    width: 28%;
   }
   .interventions-text{
+    width: 100%;
     padding-left: 0;
     p{
       padding-top: 10px;
     }
+  }
+  .interventions-row{
+    width: 100%;
   }
 }
 
