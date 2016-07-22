@@ -47,6 +47,11 @@
     }
   }
 }
+.about-knives-hide{
+  width: 100%;
+  display: none;
+  float: left;
+}
 .about-knives-content{
   width: 75%;
   float: left;
@@ -110,6 +115,11 @@
   .about-knives-title{
     float: none;
   }
+}
+.moto-faces-block-hide{
+  width: 100%;
+  display: none;
+  float: left;
 }
 .moto-faces-block{
   display: -webkit-flex;

@@ -1,7 +1,17 @@
+.pokazat{
+	display: block;
+	cursor: pointer;
+}
+.howitworks-hide{
+	display: none;
+	width: 100%;
+	float: left;
+}
 .howitworks {
 	float: left;
 	width: 100%;
 	padding: 50px 0;
+
 	&__flex {
 		display: flex;
 		-webkit-flex-wrap: wrap;

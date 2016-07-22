@@ -63,12 +63,6 @@ function initialize() {
     map3 = new google.maps.Map(document.getElementById("mapBlack"), mapOptionsKnives);
     }
 
-
-
-
-
-
-
 }
 
 
@@ -90,4 +84,18 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
+    $('.pokazat').click(function(event) {
+      event.preventDefault();
+      $('.howitworks-hide').slideToggle();
+    });
+    $('.pokazat-1').click(function(event) {
+      event.preventDefault();
+      $('.moto-faces-block-hide').slideToggle();
+    });
+    $('.pokazat-2').click(function(event) {
+      event.preventDefault();
+      $('.about-knives-hide').slideToggle();
+    });
 });
