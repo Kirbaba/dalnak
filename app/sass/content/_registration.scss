@@ -1,0 +1,123 @@
+.registration{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+.regist-form{
+  width: 20%;
+  float: left;
+  display: block;
+  h2{
+    font-size: 26px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: $gill;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+}
+.bday{
+  font-size: 13px;
+  color: #918f8f;
+  float: left;
+  width: 100%;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+.form-input{
+  width: 100%;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 4px;
+	border: 1px solid rgba(156, 156, 156, 0.38);
+	margin: 10px 0;
+	background-color: #fff;
+	padding-left: 15px;
+	box-sizing: border-box;
+
+}
+.form-input::-webkit-input-placeholder {color: #070000; font-size: 13px;}
+.form-input::-moz-placeholder          {color: #070000; font-size: 13px;}
+.form-input:-moz-placeholder           {color: #070000; font-size: 13px;}
+.form-input:-ms-input-placeholder      {color: #070000; font-size: 13px;}
+
+.day, .month{
+	height: 38px;
+	border-radius: 4px;
+	border: 1px solid rgba(156, 156, 156, 0.38);
+  margin: 10px 0;
+  width: 20%;
+}
+.month{
+  width: 38%;
+}
+.year{
+  width: 36%;
+  height: 38px;
+	line-height: 38px;
+	border-radius: 4px;
+	border: 1px solid rgba(156, 156, 156, 0.38);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.input-radio[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+  background-image: url("../img/radio-circle.png");
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+.radio-label{
+  width: 40%;
+  float: left;
+  display: inline-block;
+}
+.regist-button{
+  min-width: 50%;
+  font-size: 15px;
+  color: #fff;
+  font-family: $gill;
+  height: 32px;
+  background-color: #ff6000;
+  border-radius: 10px;
+  text-transform: lowercase;
+  border: none;
+  cursor: pointer;
+  float: none;
+  margin: 20px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  left: 20%;
+}
+
+.about-registration{
+  width: 80%;
+  float: left;
+  display: block;
+  position: relative;
+  padding-left: 100px;
+  box-sizing: border-box;
+  padding-top: 10px;
+    padding-bottom: 20px;
+}
+.about-registration-title{
+  font-size: 16px;
+  color: #000;
+  font-family: $gill;
+  background-color: #ff6000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.about-registration-text{
+  padding-left: 10px;
+  box-sizing: border-box;
+}
