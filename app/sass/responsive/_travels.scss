@@ -1,0 +1,45 @@
+@media only screen and (max-width: 1024px) {
+  .travels__left-column{
+    width: 100%;
+  }
+  .travels__right-column{
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+  .travels__left-column{
+    width: 100%;
+  }
+  .travels__right-column{
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .select-moto{
+    width: 50%;
+  }
+  .road-name{
+    width: 50%;
+  }
+  .save-dannie{
+    top: 0;
+  }
+  .you-road{
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
