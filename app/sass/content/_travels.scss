@@ -1,0 +1,256 @@
+.travels{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.travels__left-column{
+  width: 35%;
+  float: left;
+  display: block;
+  position: relative;
+}
+.travels__form{
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.button_travels{
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.travels__form_row{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  label{
+    float: left;
+    text-align: left;
+    width: 29%;
+    font-size: 14px;
+    color: #cbcaca;
+    line-height: 40px;
+  }
+}
+.travels__form_datepicker {
+  float: left;
+  width: 42%;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(156, 156, 156, 0.38);
+  box-sizing: border-box;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 10px 0;
+  }
+.select-whence, .select-where{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  label{
+    float: left;
+    text-align: left;
+    width: 29%;
+    font-size: 14px;
+    color: #cbcaca;
+    line-height: 40px;
+  }
+}
+.whence, .where{
+  float: left;
+  width: 42%;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff6000;
+  font-size: 16px;
+  border: 1px solid rgba(156, 156, 156, 0.38);
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 10px 0;
+  outline: none;
+  text-align: center;
+  font-family: $gill;
+  cursor: pointer;
+}
+.travels__road{
+  width: 100%;
+  float: left;
+  display: block;
+  margin-bottom: 20px;
+}
+.travels__road_title{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $gill;
+  text-align: left;
+}
+.travels__road_column-name{
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(156, 156, 156, 0.38);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  margin-top: 0;
+
+}
+.travels__road_column-name-second{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.travels__road_left, .travels__road_right{
+  width: 50%;
+  float: left;
+  p{
+    text-align: left;
+    font-size: 14px;
+    font-family: $gill;
+  }
+}
+.travels__road_right{
+  p{
+    text-align: center;
+  }
+}
+
+.travels__road_left{
+  border-right: 1px solid rgba(156, 156, 156, 0.38);
+  box-sizing: border-box;
+}
+.travels__right-column{
+  width: 60%;
+  float: left;
+  display: block;
+  margin-left: 50px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+#travels__map{
+  height: 430px;
+  width: 100%;
+}
+.you-road{
+  width: 100%;
+  float: left;
+  display: block;
+}
+.select-moto{
+  width: 33.3%;
+  float: left;
+  display: block;
+  input[type="radio"] {
+      display:none;
+  }
+  input[type="radio"] + label {
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+
+  input[type="radio"] + label span.events-category__item_marker {
+      display: inline-block;
+      width:19px;
+      height:19px;
+      vertical-align:middle;
+      cursor:pointer;
+      -moz-border-radius:  50%;
+      border-radius:  50%;
+  }
+
+  input[type="radio"] + label span.events-category__item_marker {
+       background-color: #c6ccd2;
+  }
+
+  input[type="radio"]:checked + label span.events-category__item_marker{
+       background-color: $o;
+       background-image: url("../img/Check-Icon.png");
+       background-position: center;
+       background-repeat: no-repeat;
+       color: $o;
+  }
+
+  input[type="radio"] + label span.events-category__item_marker,
+  input[type="radio"]:checked + label span.events-category__item_marker {
+    -webkit-transition:background-color 0.4s linear;
+    -o-transition:background-color 0.4s linear;
+    -moz-transition:background-color 0.4s linear;
+    transition:background-color 0.4s linear;
+  }
+  .events-category__item{
+    width: 100%;
+    float: left;
+    label{
+      width: 100%;
+      float: left;
+      .events-category__item_marker{
+        float: left;
+      }
+      .events-category__item_title{
+        width: 80%;
+        float: left;
+        margin: 0;
+        text-align: left;
+        padding-left: 10px;
+        box-sizing: border-box;
+        line-height: 0;
+        height: 0;
+      }
+    }
+  }
+}
+.events-category__item{
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+.road-name{
+  width: 33.3%;
+  float: left;
+  display: block;
+  padding: 35px 0px;
+  box-sizing: border-box;
+
+}
+.road-name-label{
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    font-family: $gill;
+}
+.road-name-input{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(156, 156, 156, 0.38);
+  box-sizing: border-box;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+.save-dannie{
+  border: none;
+  text-transform: lowercase;
+  top: 45px;
+  position: relative;
+}

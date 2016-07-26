@@ -16,6 +16,69 @@
     text-align: left;
     margin: 20px 0;
   }
+  .events-category__item{
+    width: 50%;
+    float: left;
+    padding-left: 0;
+    
+    label{
+      width: 100%;
+      float: left;
+      .events-category__item_marker{
+        float: left;
+      }
+      .events-category__item_title{
+        width: 80%;
+        float: left;
+        margin: 0;
+        text-align: left;
+        padding-left: 10px;
+        box-sizing: border-box;
+        line-height: 0;
+        height: 0;
+      }
+    }
+    input[type="radio"] {
+        display:none;
+    }
+    input[type="radio"] + label {
+      display: block;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    }
+
+    input[type="radio"] + label span.events-category__item_marker {
+        display: inline-block;
+        width:19px;
+        height:19px;
+        vertical-align:middle;
+        cursor:pointer;
+        -moz-border-radius:  50%;
+        border-radius:  50%;
+    }
+
+    input[type="radio"] + label span.events-category__item_marker {
+         background-color: #c6ccd2;
+    }
+
+    input[type="radio"]:checked + label span.events-category__item_marker{
+         background-color: $o;
+         background-image: url("../img/Check-Icon.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         color: $o;
+    }
+
+    input[type="radio"] + label span.events-category__item_marker,
+    input[type="radio"]:checked + label span.events-category__item_marker {
+      -webkit-transition:background-color 0.4s linear;
+      -o-transition:background-color 0.4s linear;
+      -moz-transition:background-color 0.4s linear;
+      transition:background-color 0.4s linear;
+    }
+  }
 
 }
 .bday{
@@ -65,16 +128,16 @@
 .input-radio[type="radio"] {
     display:none;
 }
-input[type="radio"] + label span {
-    display:inline-block;
-    width:10px;
-    height:10px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-  background-image: url("../img/radio-circle.png");
-    background-repeat: no-repeat;
-    cursor:pointer;
-}
+// input[type="radio"] + label span {
+//     display:inline-block;
+//     width:10px;
+//     height:10px;
+//     margin:-1px 4px 0 0;
+//     vertical-align:middle;
+//   background-image: url("../img/radio-circle.png");
+//     background-repeat: no-repeat;
+//     cursor:pointer;
+// }
 .radio-label{
   width: 40%;
   float: left;
